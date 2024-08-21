@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+// reset some custom properties
+*{
+	box-sizing: border-box;
+}
+
+body, p, h2, div, svg{
+	padding: 0;
+	margin: 0;
+}
+
+// DEIFINE VARIABLES
+
+// Colors
+$yellow: #F4D04E;
+$gray-950: #111111;
+$gray-500: #6B6B6B;
+
+// Typography
+
+@mixin text_edit($font-size, $fontweight, $font-family){
+	font-size: $font-size;
+	line-height: 150%;
+	letter-spacing: 0px;
+	font-weight: $fontweight;
+	font-family: $font-family;
+}
+
+// spacing
+$space-200: 16px;
+$space-150: 12px;
+$space-100: 8px;
+$space-50: 4px;
+
+// custom class
+
+%detail-margin{
+	margin-bottom: $space-150;
+}
+
+.container{
+	background-color: $yellow;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	// container styling
+	
+	#content_wrap{
+		background-color: white;
+		width: 327px;
+		border: 2px solid black;
+		padding: 24px;
+		border-radius: $space-200;
+		box-shadow: $space-100 $space-100 $gray-950;
+
+		#img_wrap{
+			svg{
+				border-radius: $space-150;
+			}
+		}
+
+		#detail_wrap{
+			margin-top: 24px;
+			#headingOne{
+				width: 73px;
+				height: 26px;
+				background-color: $yellow;
+				border-radius: $space-50;
+				text-align: center;
+				padding-top: 3px;
+				@extend %detail-margin;
+				span{
+				@include text_edit(12px, 800, Figtree)
+				}
+			}
+
+			#text-1{
+				@include text_edit(12px, 500, Figtree);
+				color: $gray-950;
+				@extend %detail-margin;
+			}
+
+			h2{
+				@include text_edit(20px, 800, Figtree);
+				color: $gray-950;
+				@extend %detail-margin;
+				cursor: pointer;
+
+				&:hover, :active{
+					color: $yellow
+				}
+			}
+
+
+			#text-2{
+				@include text_edit(14px, 500, Figtree);
+				color: $gray-500;
+				margin-bottom: 24px;
+				@extend %detail-margin;
+			}
+
+			#author_wrap{
+				display: flex;
+				align-items: center;
+				
+				img{
+					width: 32px;
+					height: 32px;
+					margin-right: $space-150;
+				}
+
+				span{
+					@include text_edit(14px, 800, Figtree);
+					color: $gray-950;
+				}
+			}
+
+		}
+	}
+	@media only screen and  (min-width: 1440px){
+		#content_wrap{
+			max-width: 384px;
+			flex-grow: 1;
+			#detail_wrap{
+				#headingOne{
+					width: 82px;
+					height: 29px;
+					padding-top: 4px;
+					@extend %detail-margin;
+					span{
+					@include text_edit(14px, 800, Figtree)
+					}
+				}
+				#text-1{
+					@include text_edit(14px, 500, Figtree);
+				}
+				h2{
+					@include text_edit(24px, 800, Figtree);
+					color: $gray-950;
+					@extend %detail-margin;
+				}
+	
+				#text-2{
+					font-size: 16px;
+				}
+
+				#author_wrap{
+	
+					span{
+						@include text_edit(16px, 800, Figtree);
+						color: $gray-950;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+

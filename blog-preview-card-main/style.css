@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body, p, h2, div, svg {
+  padding: 0;
+  margin: 0;
+}
+
+.container #content_wrap #detail_wrap #text-2, .container #content_wrap #detail_wrap h2, .container #content_wrap #detail_wrap #text-1, .container #content_wrap #detail_wrap #headingOne {
+  margin-bottom: 12px;
+}
+
+.container {
+  background-color: #F4D04E;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #content_wrap {
+  background-color: white;
+  width: 327px;
+  border: 2px solid black;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 8px 8px #111111;
+}
+.container #content_wrap #img_wrap svg {
+  border-radius: 12px;
+}
+.container #content_wrap #detail_wrap {
+  margin-top: 24px;
+}
+.container #content_wrap #detail_wrap #headingOne {
+  width: 73px;
+  height: 26px;
+  background-color: #F4D04E;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 3px;
+}
+.container #content_wrap #detail_wrap #headingOne span {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-family: Figtree;
+}
+.container #content_wrap #detail_wrap #text-1 {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-family: Figtree;
+  color: #111111;
+}
+.container #content_wrap #detail_wrap h2 {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-family: Figtree;
+  color: #111111;
+  cursor: pointer;
+}
+.container #content_wrap #detail_wrap h2:hover, .container #content_wrap #detail_wrap h2 :active {
+  color: #F4D04E;
+}
+.container #content_wrap #detail_wrap #text-2 {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-family: Figtree;
+  color: #6B6B6B;
+  margin-bottom: 24px;
+}
+.container #content_wrap #detail_wrap #author_wrap {
+  display: flex;
+  align-items: center;
+}
+.container #content_wrap #detail_wrap #author_wrap img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.container #content_wrap #detail_wrap #author_wrap span {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-family: Figtree;
+  color: #111111;
+}
+@media only screen and (min-width: 1440px) {
+  .container #content_wrap {
+    max-width: 384px;
+    flex-grow: 1;
+  }
+  .container #content_wrap #detail_wrap #headingOne {
+    width: 82px;
+    height: 29px;
+    padding-top: 4px;
+  }
+  .container #content_wrap #detail_wrap #headingOne span {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-family: Figtree;
+  }
+  .container #content_wrap #detail_wrap #text-1 {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-family: Figtree;
+  }
+  .container #content_wrap #detail_wrap h2 {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-family: Figtree;
+    color: #111111;
+  }
+  .container #content_wrap #detail_wrap #text-2 {
+    font-size: 16px;
+  }
+  .container #content_wrap #detail_wrap #author_wrap span {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-family: Figtree;
+    color: #111111;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile_sass": "sass blog-preview-card-main/style.scss blog-preview-card-main/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
