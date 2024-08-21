@@ -22,7 +22,6 @@ body, p, h2, div, svg {
 .container #content_wrap {
   background-color: white;
   width: 327px;
-  border: 2px solid black;
   padding: 24px;
   border-radius: 16px;
   box-shadow: 8px 8px #111111;
